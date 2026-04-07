@@ -6,50 +6,77 @@ Base URL: `https://REPLACE-THIS-WITH-YOUR-DEPLOYED-URL.onrender.com`
 
 | Resource         | Method | Endpoint                      | Description                              |
 |------------------|--------|-------------------------------|------------------------------------------|
-| `suggestions`    | GET    | /get-all-suggestions          | Write your description here              |
-| `suggestions`    | GET    | /get-suggestions-by-category  | Write your description here              |
-| `suggestions`    | POST   | /add-one-suggestion           | Write your description here              |
+| `suggestions`    | GET    | /get-all-suggestions          | retrieves all suggestions from the database              |
+| `suggestions`    | GET    | /get-suggestions-by-category  | retrieves suggestions by category              |
+| `suggestions`    | POST   | /add-one-suggestion           | adds a new suggestion              |
 
 ---
 
 ### 🔹 GET `/get-all-suggestions`
 
-**Description:** Write your description here
+**Description:** Retrieves all suggestions from the database
 
 **Example Response:**
 
 ```
-Write the data returned by this endpoint. 
-Think about its data type (String, Object, Array of Objects, etc.)
-Use spaces/indents to format the data if it is an array or object. 
+[
+    {
+        "id": 1,
+        "title": 'Integrate with third-party API', 
+        "category": 'feature', 
+        "suggestion": 'Would allow syncing data with external services' 
+    },
+    {
+    "id": 2,
+    "title": 'Color contrast accessibility issue', 
+"category": 'ui', 
+"suggestion": 'Some text does not meet accessibility standards'
+    },
+    {
+    "id": 3,
+    "title": 'Add multi-language support', 
+"category": 'feature', 
+"suggestion": 'Support for Spanish and French requested'
+    },
+]
 ```
 
 ---
 
 ### 🔹 GET `/get-suggestions-by-category/:category`
 
-**Description:** Write your description here
+**Description:** Retrieves suggestions by category
 
 **Example Response:**
 
 ```
-Write the data returned by this endpoint. 
-Think about its data type (String, Object, Array of Objects, etc.)
-Use spaces/indents to format the data if it is an array or object. 
+[
+    {
+         "id": 1,
+        "title": 'Integrate with third-party API', 
+        "category": 'feature', 
+        "suggestion": 'Would allow syncing data with external services' 
+    },
+    {
+    id": 3,
+    "title": 'Add multi-language support', 
+"category": 'feature', 
+"suggestion": 'Support for Spanish and French requested'
+    },
+]
 ```
 
 ---
 
 ### 🔹 POST `/add-one-suggestion`
 
-**Description:** Write your description here
+**Description:** Adds a new suggestion
 
 **Example Request Body:**
 
 ```
-Write the data required in the request body. 
-Think about its data type (String, Object, Array of Objects, etc.)
-Use spaces/indents to format the data if it is an array or object. 
+Success! Suggestion has been added.
+
 ```
 
 **Example Response:**
