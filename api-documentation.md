@@ -75,16 +75,18 @@ Base URL: `https://REPLACE-THIS-WITH-YOUR-DEPLOYED-URL.onrender.com`
 **Example Request Body:**
 
 ```
-Success! Suggestion has been added.
+    {
+        "title": "Integrate with third-party API",
+        "category": "feature",
+        "suggestion": "Would allow syncing data with external services"
+    }
 
 ```
 
 **Example Response:**
 
 ```
-Write the data returned by this endpoint. 
-Think about its data type (String, Object, Array of Objects, etc.)
-Use spaces/indents to format the data if it is an array or object. 
+Success! Suggestion has been added.
 ```
 ---
 
