@@ -47,6 +47,6 @@ app.get("/api/get-suggestions-by-category/:category", async (req, res) => {
 
 app.post("/api/add-one-suggestion", async (req, res) => {
     const { title, category, suggestion } = req.body;
-    const result = await addOneSuggestion(title, category, suggestion);
+    await addOneSuggestion(title, category, suggestion);
     res.send(`Success! Suggestion has been added.`);
 })
