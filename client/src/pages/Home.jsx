@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import IconPlus from "../../assets/icons/icon-plus.svg";
 import SuggestionCard from "../components/SuggestionCard";
+import Empty from "../../assets/suggestions/illustration-empty.svg";
 
 export default function Home() {
   const [suggestions, setSuggestions] = useState([]);
@@ -84,7 +85,12 @@ export default function Home() {
           <div className="contents">
             <div className="order-last md:order-none my-5 mx-5 md:m-0 ">
               {suggestions.length === 0 && (
-                <div className="text-center bg-white rounded-lg h-[500px] p-5">
+                <div className="text-center bg-white rounded-lg h-[500px] p-5 space-y-5">
+                  <img
+                    src={Empty}
+                    alt="person with magnifying glass"
+                    className="m-auto my-10"
+                  />
                   <h3 className="text-lg font-bold">
                     There is no feedback yet.
                   </h3>
