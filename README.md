@@ -1,6 +1,6 @@
 # Product Feedback App
 
-## Product Feedback Management System
+## Project Description & Purpose
 
 A full-stack application designed to help startups bridge the gap between user suggestions and product iteration. This project demonstrates a complete end-to-end development cycle, from schema design to cloud deployment, and represents another Full-Stack Capstone of my 12-month intensive training at AnnieCannons, tracking my progression from a static UI to a fully deployed PERN stack (PostgreSQL, Express, React, Node.js) architecture.
 
@@ -70,11 +70,6 @@ VALUES
 **Future ideas for how I'd continue building this project:** 
 - Full CRUD Lifecycle: Implementing DELETE and UPDATE functionality for feedback owners.
 - Color Themes: Adding a native Dark Mode toggle for improved accessibility and user preference.
-
-## Lessons Learned
-Full-Stack Synchronization: Gained deep experience in CORS configuration and environment variable management across different hosting providers.
-Component Architecture: Refined the ability to break down complex Figma designs into reusable, modular React components.
-Error Handling: Implemented comprehensive try/catch blocks on the backend to provide descriptive error messages to the frontend.
 
 ## Resources
 
