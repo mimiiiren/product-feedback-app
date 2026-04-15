@@ -33,18 +33,18 @@ async function addOneSuggestion(title, category, suggestion) {
 
 // API endpoints
 
-app.get("/api/get-all-suggestions", async (req, res) => {
+app.get("/get-all-suggestions", async (req, res) => {
     const suggestions = await getAllSuggestions();
     res.json(suggestions);
 })
 
-app.get("/api/get-suggestions-by-category/:category", async (req, res) => {
+app.get("/get-suggestions-by-category/:category", async (req, res) => {
     const category = req.params.category;
     const suggestions = await getSuggestionsByCategory(category);
     res.json(suggestions);
 })
 
-app.post("/api/add-one-suggestion", async (req, res) => {
+app.post("/add-one-suggestion", async (req, res) => {
     const { title, category, suggestion } = req.body;
     await addOneSuggestion(title, category, suggestion);
     res.send(`Success! Suggestion has been added.`);
