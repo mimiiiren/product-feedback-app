@@ -1,2 +1,2 @@
-/api/* http://localhost:3000/:splat 200
+/api/* https://product-feedback-app-2thw.onrender.com/:splat 200
 /* /index.html 200
